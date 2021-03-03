@@ -1,0 +1,48 @@
+{
+  "name": "strapi-provider-upload-firebase-fix",
+  "version": "0.0.1",
+  "description": "firebase provider for strapi upload (fixed)",
+  "homepage": "http://strapi.io",
+  "keywords": [
+    "upload",
+    "firebase",
+    "strapi"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib",
+  "strapi": {
+    "isProvider": true
+  },
+  "author": {
+    "email": "mr.kaparov@gmail.com",
+    "name": "NooBiToo",
+    "url": "http://strapi.io"
+  },
+  "maintainers": [
+    {
+      "name": "NooBiToo",
+      "email": "mr.kaparov@gmail.com",
+      "url": "http://strapi.io"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bentrynning/strapi-provider-upload-firebase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bentrynning/strapi-provider-upload-firebase/issues"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"no tests yet\""
+  },
+  "dependencies": {
+    "firebase-admin": "^8.5.0"
+  }
+}
