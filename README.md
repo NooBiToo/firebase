@@ -49,6 +49,35 @@ Go to your Firebase account → Storage
 
 You should see your bucket name on the "Files" tab, next to the link symbol (🔗) at the top of the page. Example : gs://my-bucketname.appspot.com
 
+### Config file (pliguns.js)
+```json
+upload: {
+    provider: "firebase-fix",
+    providerOptions: {
+      serviceAccount: {
+         "type": "service_account",
+         "project_id": "your id",
+         "private_key_id": "your private key",
+         "private_key": "-----BEGIN PRIVATE KEY----- your key \n-----END PRIVATE KEY-----\n",
+         "client_email": "your client.gserviceaccount.com",
+         "client_id": "your id",
+         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+         "token_uri": "https://oauth2.googleapis.com/token",
+         "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+         "client_x509_cert_url": "https://www.googleapis.com/robot"
+      },
+      bucket: "bucket.appstop.com"
+   },
+   breakpoints: {
+      xlarge: 1920,
+      large: 1000,
+      medium: 750,
+      small: 500,
+      xsmall: 64
+    }
+},
+```
+
 ## Resources
 
 - [MIT License](LICENSE.md)
